@@ -7,6 +7,11 @@ module.exports = {
     extend: {
       colors: {
         bgcolor: '#050913',
+        lavendar: '#613F75',
+        slateblue: '#483d8b',
+        // skyBlue: '#0ea5e9',
+        // navColor: '#39306f',
+        // textColor: '#6c63a2',
       },
       // backgroundImage: {
       //   site: "url('/src/assets/images/bg.jpg')",

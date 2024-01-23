@@ -25,7 +25,7 @@ const Main = () => {
                initial='hidden'
                whileInView={'show'}
                viewPort={{once:false, amount: 0.7}}
-               className='mb-6 mt-8 font-primary text-[36px] lg:text-[60px] leadign-[1] font-semibold'
+               className='mb-8 mt-8 font-primary text-[36px] lg:text-[60px] leadign-[1] font-semibold'
             >
               <span>I'm a </span>
               <TypeAnimation
@@ -34,7 +34,7 @@ const Main = () => {
                   2000, // pause
                   "Web Developer",
                   2000, 
-                  "Dancer",
+                  "Problem Solver",
                   2000,
                 ]}
                 speed={50}
@@ -50,7 +50,7 @@ const Main = () => {
                viewPort={{once:false, amount: 0.7}}
                className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
-              I'm a 2nd year student at <span className='font-semibold'>Amrita Vishwa Vidyapeetham</span> pursuing B.Tech in Computer Science and Engineering. I'm a passionate web developer. I love to learn new things and explore new technologies.
+              <span   className='text-xl tracking-tight'>I'm a 2nd year student at Amrita Vishwa Vidyapeetham pursuing B.Tech in Computer Science and Engineering.</span>
             </motion.p>
             <motion.div
               variants={fadeIn('up', 0.8)} 
@@ -67,16 +67,16 @@ const Main = () => {
               initial='hidden'
               whileInView={'show'}
               viewPort={{once:false, amount: 0.7}}
-              className='flex items-center gap-x-4 max-w-max lg:mx-0 mx-auto'
+              className='absolute bottom-16  flex items-center gap-x-10 max-w-max lg:mx-0 mx-auto'
             >
               <a href='#'>
-                <FaGithub className='text-2xl' />
+                <FaGithub className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
               </a>
               <a href='#'>
-                <FaLinkedin className='text-2xl' />
+                <FaLinkedin className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
               </a>
               <a href='#'>
-                <FaInstagram className='text-2xl' />
+                <FaInstagram className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
               </a>
 
             </motion.div>
@@ -89,7 +89,7 @@ const Main = () => {
             viewPort={{once:false, amount: 0.7}}
             className='lg:flex hidden flex-1 max-w-[320px] lg:max-w-[480px]'
           >
-            <img src={image} style={{borderRadius:20, borderTopRightRadius:100, borderBottomLeftRadius:100 }} alt="" />
+            {/* <img src={image} style={{borderRadius:20, borderTopRightRadius:100, borderBottomLeftRadius:100 }} alt="" /> */}
           </motion.div>
         </div>
       </div>

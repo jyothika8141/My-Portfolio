@@ -4,8 +4,9 @@ import {fadeIn} from '../variants'
 
 const Contact = () => {
   return (
-    <section className='sectiton mb-40' id='contact'>
-      <div className='container mx-auto'>
+    // added id to allow navbar to scroll to this section
+    <section className='sectiton mb-40' id='contact'>   
+      <div className='container mx-auto'> 
         <div className='flex flex-col lg:flex-row'>
           <motion.div
              variants={fadeIn('down', 0.3)} 
