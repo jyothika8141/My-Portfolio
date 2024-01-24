@@ -5,7 +5,7 @@ import {fadeIn} from '../variants'
 const Contact = () => {
   return (
     // added id to allow navbar to scroll to this section
-    <section className='sectiton mb-40' id='contact'>   
+    <section className='sectiton mb-10 sm:py-40 lg:-mt-20 xl-mt-0' id='contact'>   
       <div className='container mx-auto'> 
         <div className='flex flex-col lg:flex-row'>
           <motion.div
@@ -17,7 +17,7 @@ const Contact = () => {
           >
             <div>
               <h4 className='text-xl uppercase text-sky-500 font-medium mb-6 tracking-wide'> Get in touch </h4>
-              <h2 className='text-4xl lg:text:6xl leading noe font primary'> Let's work together</h2>
+              <h2 className='text-4xl lg:text:6xl leading font primary'> Let's work together</h2>
             </div>
           </motion.div>
           <motion.div
@@ -30,7 +30,7 @@ const Contact = () => {
             <input type='text' placeholder='Enter your name' className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-sky-500 transition-all duration-300' />
             <input type='text' placeholder='Enter your email' className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-sky-500 transition-all duration-300' />
             <textarea type='text' placeholder='Enter a message' rows={5} className='bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-sky-500 transition-all duration-300 resize-none' />
-            <button className='btn btn-lg'>Send message </button>
+            <button className='btn btn-sm lg:btn-lg'>Send message </button>
           </motion.div>
         </div>
       </div>

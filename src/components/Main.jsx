@@ -5,7 +5,7 @@ import {fadeIn} from '../variants'
 import { TypeAnimation } from 'react-type-animation'
 
 const Main = () => {
-  const image = require('../assets/mmee.png')
+  // const image = require('../assets/mmee.png')
   return (
     <section className='section minh-[85vh] lg:min-h-[70vh] flex items-center' id='home'>
       <div className='container mx-auto lg:-mt-28 mt-8'>
@@ -59,7 +59,7 @@ const Main = () => {
               viewPort={{once:false, amount: 0.7}}
               className='flex max-w-max mx-auto lg:mx-0 items-center gap-x-8 mb-12'
             >
-              <button className='btn btn-lg'>Contact me</button>
+              <button className='btn btn-sm lg:btn-lg'>Contact me</button>
               <a href="#">My Portfolio</a>
             </motion.div>
             <motion.div
@@ -67,16 +67,16 @@ const Main = () => {
               initial='hidden'
               whileInView={'show'}
               viewPort={{once:false, amount: 0.7}}
-              className='absolute bottom-16  flex items-center gap-x-10 max-w-max lg:mx-0 mx-auto'
+              className='flex items-center gap-x-10 max-w-max lg:absolute lg:bottom-16 lg:mx-0 mx-auto'
             >
               <a href='#'>
-                <FaGithub className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
+                <FaGithub className='text-5xl p-1.5 border-sky-500 border-2 rounded-full lg:text-6xl lg:p-3' />
               </a>
               <a href='#'>
-                <FaLinkedin className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
+                <FaLinkedin className='text-5xl p-1.5 border-sky-500 border-2 rounded-full lg:text-6xl lg:p-3' />
               </a>
               <a href='#'>
-                <FaInstagram className='text-6xl p-3 border-sky-500 border-2 rounded-full' />
+                <FaInstagram className='text-5xl p-1.5 border-sky-500 border-2 rounded-full lg:text-6xl lg:p-3' />
               </a>
 
             </motion.div>
