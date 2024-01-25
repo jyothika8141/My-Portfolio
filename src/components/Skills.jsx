@@ -23,19 +23,19 @@ const Skills = () => {
       }
   ]
   return (
-    <section className='section h-screen mt-24' id='skills'>
+    <section className='section h-screen my-48 lg:-mt-10 lg:-mb-10' id='skills'>
       <div className='container mx-auto'>
-        <div className='flex-1 flex justify-start items-center lg:flex-row'>
+        <div className='flex flex-col justify-start items-center lg:flex-row'>
           <div className='mr-40'>
           <motion.div
             variants={fadeIn('right', 0.5)} 
             initial='hidden'
             whileInView={'show'}
             viewPort={{once:false, amount: 0.3}}
-            className='flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix blend-lighten mb-12 lg:mb-0'
+            className='flex-1 pl-20 md:pl-32 lg:pl-0 lg:bg-services lg:bg-bottom bg-no-repeat mix blend-lighten mb-12 lg:mb-0'
           >
-            <h2 className='h2 text-sky-500 mb-6'>What my skills are</h2>
-            <h3 className='h3 max-w-[455px] mb-16'>Lorem ipsum lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</h3>
+            <h2 className='h2 text-center mb-6 md:text-left'>What my skills are</h2>
+            <h3 className='h3 font-normal md:text-left text-center max-w-[455px] mb-16'>Lorem ipsum lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</h3>
           </motion.div>
           {/* <motion.div
             variants={fadeIn('down', 0.6)} 

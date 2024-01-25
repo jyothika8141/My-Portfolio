@@ -4,7 +4,15 @@ import {motion} from 'framer-motion'
 import {fadeIn} from '../variants'
 import { TypeAnimation } from 'react-type-animation'
 
+import { useState, useEffect } from 'react';
+
 const Main = () => {
+  const [animationPlayed, setAnimationPlayed] = useState(false);
+
+  useEffect(() => {
+    // Play the animations once on component mount
+    setAnimationPlayed(true);
+  }, []);
   // const image = require('../assets/mmee.png')
   return (
     <section className='section minh-[85vh] lg:min-h-[70vh] flex items-center' id='home'>
@@ -16,6 +24,7 @@ const Main = () => {
               initial='hidden'
               whileInView={'show'}
               viewPort={{once:false, amount: 0.7}}
+              animate={animationPlayed ? 'show' : 'hidden'} // Use animate prop for controlled animation
               className='text-2xl font-bold leading-[0.8] lg:text-4xl'
             >
               Jyothika <span>Manoj</span>
@@ -25,6 +34,7 @@ const Main = () => {
                initial='hidden'
                whileInView={'show'}
                viewPort={{once:false, amount: 0.7}}
+               animate={animationPlayed ? 'show' : 'hidden'}
                className='mb-8 mt-8 font-primary text-[36px] lg:text-[60px] leadign-[1] font-semibold'
             >
               <span>I'm a </span>
@@ -48,6 +58,7 @@ const Main = () => {
                initial='hidden'
                whileInView={'show'}
                viewPort={{once:false, amount: 0.7}}
+               animate={animationPlayed ? 'show' : 'hidden'} // Use animate prop for controlled animation
                className='mb-8 max-w-lg mx-auto lg:mx-0'
             >
               <span   className='text-xl tracking-tight'>I'm a 2nd year student at Amrita Vishwa Vidyapeetham pursuing B.Tech in Computer Science and Engineering.</span>
@@ -57,6 +68,7 @@ const Main = () => {
               initial='hidden'
               whileInView={'show'}
               viewPort={{once:false, amount: 0.7}}
+              animate={animationPlayed ? 'show' : 'hidden'} // Use animate prop for controlled animation
               className='flex max-w-max mx-auto lg:mx-0 items-center gap-x-8 mb-12'
             >
               <button className='btn btn-sm lg:btn-lg'>Contact me</button>
@@ -67,9 +79,10 @@ const Main = () => {
               initial='hidden'
               whileInView={'show'}
               viewPort={{once:false, amount: 0.7}}
+              animate={animationPlayed ? 'show' : 'hidden'} // Use animate prop for controlled animation
               className='flex items-center gap-x-10 max-w-max lg:absolute lg:bottom-16 lg:mx-0 mx-auto'
             >
-              <a href='#'>
+              <a href='https://github.com/jyothika8141'>
                 <FaGithub className='text-5xl p-1.5 border-sky-500 border-2 rounded-full lg:text-6xl lg:p-3' />
               </a>
               <a href='#'>
@@ -87,6 +100,7 @@ const Main = () => {
             initial='hidden'
             whileInView={'show'}
             viewPort={{once:false, amount: 0.7}}
+            animate={animationPlayed ? 'show' : 'hidden'} // Use animate prop for controlled animation
             className='lg:flex hidden flex-1 max-w-[320px] lg:max-w-[480px]'
           >
             {/* <img src={image} style={{borderRadius:20, borderTopRightRadius:100, borderBottomLeftRadius:100 }} alt="" /> */}

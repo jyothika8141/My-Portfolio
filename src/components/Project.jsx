@@ -8,7 +8,7 @@ const Project = () => {
   const dbms = require('../assets/dbms.webp')
 
   return (
-    <section className='section h-screen mt-40 mb-80 lg:-my-10 xl:my-10' id='project'>
+    <section className='section h-screen mt-96 mb-80 lg:-my-10 xl:my-10' id='project'>
       <div className='container mx-auto'>
         <div className='flex lg:flex-row flex-col gap-x-10'> 
         <motion.div
@@ -19,7 +19,7 @@ const Project = () => {
             className='flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0'
           >
             <div className='lg:py-12 xl:py-20 pr-10'>
-              <h2 className='h2 leading-tight xl:py-1.5'>
+              <h2 className='text-center h2 leading-tight lg:text-left xl:py-1.5'>
                 My Projects
               </h2>
               <p>
